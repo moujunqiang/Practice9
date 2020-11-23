@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.practice9">
+    package="com.example.servicetest">
 
     <application
         android:allowBackup="true"
@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
-            android:name=".testService"
+            android:name="com.example.servicetest.IntentDemoService"
             android:exported="false"></service>
         <service
-            android:name=".tempService"
+            android:name="com.example.servicetest.MusicService"
             android:enabled="true"
             android:exported="true" />
 
         <service
-            android:name=".UpdateService"
+            android:name="com.example.servicetest.UpdateService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.servicetest.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
